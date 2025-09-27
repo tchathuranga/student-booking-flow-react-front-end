@@ -63,8 +63,8 @@ export default function BookingFlow() {
     const diffMs = selectedDate.getTime() - nowColombo.getTime();
     const diffHours = diffMs / (1000 * 60 * 60);
     
-    if (diffHours < 24) {
-      alert('Bookings must be made at least 24 hours in advance. Please select a later date.');
+    if (diffHours < 22.5) {
+      alert('Bookings must be made at least 1 day in advance. Please select a later date.');
       return;
     }
     

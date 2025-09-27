@@ -164,7 +164,7 @@ export default function StepCalendar({
               title={"Select 09:00 AM"}
               disabled={isFull}
             >
-              10:30 AM
+              9:00 AM
             </button>
 
             {isLoadingCount ? (
