@@ -1,3 +1,5 @@
+import { Kanban } from "lucide-react";
+
 export const CENTER = {
     org: "International sugar studio and campus",
     title: "Student Weekly Plans",
@@ -13,5 +15,6 @@ export const BRANCH = [
     "Dambulla",
     "Horana",
     "Negombo",
-    "Ratnapura",    
+    "Ratnapura",
+    "Kandy"    
 ]
