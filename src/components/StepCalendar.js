@@ -164,7 +164,7 @@ export default function StepCalendar({
               title={"Select 09:00 AM"}
               disabled={isFull}
             >
-              09:00 AM
+              10:30 AM
             </button>
 
             {isLoadingCount ? (
@@ -178,14 +178,16 @@ export default function StepCalendar({
 
           <button
             onClick={onNext}
-            disabled={!date || time !== "09:00" || isFull}
+            disabled={!date || time !== "09:00" || isFull || !branch}
             className="bf-btn-primary bf-btn-next"
             title={
-              !date 
-                ? "Pick a date" 
-                : isFull 
-                  ? "This date is fully booked" 
-                  : (time !== "09:00" ? "Pick 09:00" : "Next")
+              !branch
+                ? "Select a branch"
+                : !date 
+                  ? "Pick a date" 
+                  : isFull 
+                    ? "This date is fully booked" 
+                    : (time !== "09:00" ? "Pick 09:00" : "Next")
             }
           >
             Next
